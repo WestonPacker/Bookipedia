@@ -1,0 +1,93 @@
+/* THIS CALCULATES YOUR PADDING INTO YOUR WIDTH */
+* {
+  box-sizing: border-box;
+}
+/* TEXT */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.light {
+  color: black;
+}
+
+.dark {
+  color: white;
+}
+
+/* THEME */
+/* IF ELEMENT HAS A CLASS OF CARD AND COLOR */
+.card.darkyellow {
+  background-color: #ffb224;
+}
+
+.card.lightblue {
+  background-color: #5cceff;
+}
+
+.card.darkblue {
+  background-color: #1944cf;
+}
+
+.card.lightpurple {
+  background-color: #b435bd;
+}
+
+.cards-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.column-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 2px solid black;
+  box-shadow: 0 2px 10px 0 rgba(92, 92, 92, 1);
+  border-radius: 25px;
+  margin: 0 auto 15px auto;
+  width: 100%;
+}
+
+.name {
+  font-size: 3em;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0, 0, 0, .5);
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+  font-size: 20px;
+}
+
+/* TABLET & DESKTOP */
+@media screen and (min-width:768px) {
+  .card {
+    width: 46%;
+    margin: 0 auto 30px;
+  }
+
+  .column-container {
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .left-column,
+  .right-column {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+  }
+}
