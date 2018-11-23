@@ -153,7 +153,7 @@ const series = {
     ]
   }
 }
-
+// This is the filter branch
 // Creates a new Array of all characters that are human
 const humans = [];
 series.stormlight.characters.map(function(human) {
