@@ -154,31 +154,7 @@ const series = {
   }
 }
 // This is the filter branch
-// Creates a new Array of all characters that are human
-const humans = [];
-series.stormlight.characters.map(function(human) {
-  if (human.species === 'Human') {
-    humans.push(human);
-  }
+series.inheritance.books.filter(function(book){
+  console.log(book.pages)
+  return book.pages >= 800;
 })
-
-// Prints out all the pages to each book
-series.stormlight.books.forEach(function (book) {
-  console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
-series.reaper.books.forEach(function (book) {
-  console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
-series.inheritance.books.forEach(function (book) {
-  console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
-
-// This plucks a string out of an Array
-const char = series.stormlight.characters.find(character => character.name === 'Kaladin');
-// This is a Template String
-console.log(`${char.name} is a ${char.eyes} ${char.gender} ${char.race} ${char.species}. `);
-
-// Prints out all "book" info into a Table Chart
-console.table(series.stormlight.books);
-console.table(series.reaper.books);
-console.table(series.inheritance.books);
