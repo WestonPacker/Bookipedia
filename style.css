@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
 }
+
 /* TEXT */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -42,6 +43,18 @@ body {
   display: flex;
   flex-flow: column wrap;
   align-content: center;
+}
+
+.title {
+  font-size: 4em;
+  text-align: center;
+  font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif
 }
 
 .card {

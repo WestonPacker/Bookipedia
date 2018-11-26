@@ -1,182 +1,297 @@
-// This is an object that contains "series" => "books" & "characters" 
+// This is an object that contains "series" => "books" & "characters"
 const series = {
   stormlight: {
-    books: [{
-        "title": "The Way Of Kings",
-        "author": "Brandon Sanderson",
-        "series": "Stormlight Archive",
-        "pages": 1007,
-        "published": 2010,
-        "audioBook": true
+    books: [
+      {
+        title: "The Way Of Kings",
+        author: "Brandon Sanderson",
+        series: "Stormlight Archive",
+        pages: 1007,
+        published: 2010,
+        audioBook: true
       },
       {
-        "title": "Words of Radiance",
-        "author": "Brandon Sanderson",
-        "series": "Stormlight Archive",
-        "pages": 1087,
-        "published": 2014,
-        "audioBook": true
+        title: "Words of Radiance",
+        author: "Brandon Sanderson",
+        series: "Stormlight Archive",
+        pages: 1087,
+        published: 2014,
+        audioBook: true
       },
       {
-        "title": "Oathbringer",
-        "author": "Brandon Sanderson",
-        "series": "Stormlight Archive",
-        "pages": 1248,
-        "published": 2017,
-        "audioBook": true
+        title: "Oathbringer",
+        author: "Brandon Sanderson",
+        series: "Stormlight Archive",
+        pages: 1248,
+        published: 2017,
+        audioBook: true
       }
     ],
-    characters: [{
-        "name": "Kaladin",
-        "species": "Human",
-        "gender": "Male",
-        "race": "Alethi",
-        "radiant": "Windrunner",
-        "bond": "Honorspen",
-        "eyes": "Darkeyed",
+    characters: [
+      {
+        name: "Kaladin",
+        species: "Human",
+        gender: "Male",
+        race: "Alethi",
+        radiant: "Windrunner",
+        bond: "Honorspen",
+        eyes: "Darkeyed"
       },
       {
-        "name": "Shallan",
-        "gender": "Demale",
-        "species": "Human",
-        "race": "Vaden",
-        "radiant": "Lightweaver",
-        "bond": "Liespren",
-        "eyes": "LightEyed",
+        name: "Shallan",
+        gender: "Demale",
+        species: "Human",
+        race: "Vaden",
+        radiant: "Lightweaver",
+        bond: "Liespren",
+        eyes: "LightEyed"
       },
       {
-        "name": "Sven",
-        "gender": "Male",
-        "species": "Human",
-        "race": "Shin",
-        "radiant": "Skybreaker",
-        "bond": "Highspren",
-        "eyes": "Lighteyed"
+        name: "Sven",
+        gender: "Male",
+        species: "Human",
+        race: "Shin",
+        radiant: "Skybreaker",
+        bond: "Highspren",
+        eyes: "Lighteyed"
       },
       {
-        "name": "Dallinar",
-        "species": "Human",
-        "gender": "Male",
-        "race": "Alethi",
-        "radiant": "Bondsmith",
-        "bond": "Godspren",
-        "eyes": "Lighteyed"
+        name: "Dallinar",
+        species: "Human",
+        gender: "Male",
+        race: "Alethi",
+        radiant: "Bondsmith",
+        bond: "Godspren",
+        eyes: "Lighteyed"
       },
       {
-        "name": "Jasnah",
-        "species": "Human",
-        "gender": "Female",
-        "race": "Alethi",
-        "radiant": "Elsecaller",
-        "bond": "Inkspren",
-        "eyes": "Lighteyed",
+        name: "Jasnah",
+        species: "Human",
+        gender: "Female",
+        race: "Alethi",
+        radiant: "Elsecaller",
+        bond: "Inkspren",
+        eyes: "Lighteyed"
       },
       {
-        "name": "Lift",
-        "species": "Human",
-        "gender": "Female",
-        "race": "Reshi",
-        "radiant": "Edgedancer",
-        "bond": "Cultivationspren",
-        "eyes": "Lighteyed"
+        name: "Lift",
+        species: "Human",
+        gender: "Female",
+        race: "Reshi",
+        radiant: "Edgedancer",
+        bond: "Cultivationspren",
+        eyes: "Lighteyed"
       }
     ]
   },
   reaper: {
-    books: [{
-        "title": "Red Rising",
-        "author": "Pierce Brown",
-        "series": "Reaper",
-        "pages": 382,
-        "published": 2014,
-        "audiobook": true
+    books: [
+      {
+        title: "Red Rising",
+        author: "Pierce Brown",
+        series: "Reaper",
+        pages: 382,
+        published: 2014,
+        audiobook: true
       },
       {
-        "title": "Golden Son",
-        "author": "Pierce Brown",
-        "series": "Reaper",
-        "pages": 464,
-        "published": 2015,
-        "audiobook": true
+        title: "Golden Son",
+        author: "Pierce Brown",
+        series: "Reaper",
+        pages: 464,
+        published: 2015,
+        audiobook: true
       },
       {
-        "title": "Morning Star",
-        "author": "Pierce Brown",
-        "series": "Reaper",
-        "pages": 518,
-        "published": 2016,
-        "audiobook": true
+        title: "Morning Star",
+        author: "Pierce Brown",
+        series: "Reaper",
+        pages: 518,
+        published: 2016,
+        audiobook: true
       },
       {
-        "title": "Iron Gold",
-        "author": "Pierce Brown",
-        "series": "Reaper",
-        "pages": 596,
-        "published": 2018,
-        "audiobook": true
+        title: "Iron Gold",
+        author: "Pierce Brown",
+        series: "Reaper",
+        pages: 596,
+        published: 2018,
+        audiobook: true
+      }
+    ],
+    characters: [
+      {
+        name: "Darrow",
+        nickname: "Reaper",
+        gender: "Male",
+        color: "Red",
+        house: "House Augustus"
+      },
+      {
+        name: "Sevro",
+        nickname: "Goblin",
+        gender: "Male",
+        color: "Gold",
+        house: "House Barca"
+      },
+      {
+        name: "Virginia",
+        nickname: "Mustang",
+        gender: "Female",
+        color: "Gold",
+        house: "House Augustus"
+      },
+      {
+        name: "Cassius",
+        nickname: "The Morning Knight",
+        gender: "Male",
+        color: "Gold",
+        house: "House Bellona"
+      },
+      {
+        name: "Ragnar",
+        nickname: "The Shield of Tinos",
+        gender: "Male",
+        color: "Obsidian",
+        house: "The Valkyrie"
+      },
+      {
+        name: "Roque",
+        nickname: "The Poet of Deimos",
+        gender: "Male",
+        color: "Gold",
+        house: "House Fabii"
       }
     ]
   },
   inheritance: {
-    books: [{
-        "title": "Eragon",
-        "author": "Christopher Paolini",
-        "series": "Inheritance Cycle",
-        "pages": 544,
-        "published": 2002,
-        "audiobook": true
+    books: [
+      {
+        title: "Eragon",
+        author: "Christopher Paolini",
+        series: "Inheritance Cycle",
+        pages: 544,
+        published: 2002,
+        audiobook: true
       },
       {
-        "title": "Eldest",
-        "author": "Christopher Paolini",
-        "series": "Inheritance Cycle",
-        "pages": 694,
-        "published": 2005,
-        "audiobook": true
+        title: "Eldest",
+        author: "Christopher Paolini",
+        series: "Inheritance Cycle",
+        pages: 694,
+        published: 2005,
+        audiobook: true
       },
       {
-        "title": "Brisingr",
-        "author": "Christopher Paolini",
-        "series": "Inheritance Cycle",
-        "pages": 831,
-        "published": 2008,
-        "audiobook": true
+        title: "Brisingr",
+        author: "Christopher Paolini",
+        series: "Inheritance Cycle",
+        pages: 831,
+        published: 2008,
+        audiobook: true
       },
       {
-        "title": "Inheritance",
-        "author": "Christopher Paolini",
-        "series": "Inheritance Cycle",
-        "pages": 860,
-        "published": 2011,
-        "audiobook": true
+        title: "Inheritance",
+        author: "Christopher Paolini",
+        series: "Inheritance Cycle",
+        pages: 860,
+        published: 2011,
+        audiobook: true
       }
+    ],
+    characters: [
+      {
+        name: "Eragon",
+        alias: "Shadeslayer",
+        gender: "Male",
+        species: "Human",
+        dragonRider: true,
+        bond: "Saphira"
+      },
+      {
+        name: "Arya",
+        alias: "Shadeslayer",
+        gender: "Female",
+        species: "Elf",
+        dragonRider: true,
+        bond: "Firnen"
+      },
+      {
+        name: "Roran",
+        alias: "Stronghammer",
+        gender: "Male",
+        species: "Human",
+        dragonRider: false,
+      },
+      {
+        name: "Murtagh",
+        gender: "Male",
+        species: "Human",
+        dragonRider: true,
+        bond: "Thorn"
+      },
+      {
+        name: "Orik",
+        alias: "Grimstborith Orik",
+        gender: "Male",
+        species: "Dwarf",
+        dragonRider: false,
+        clan: "Dûrgrimst Ingeitum"
+      },
+      {
+        name: "Saphira",
+        alias: "Brightscales",
+        gender: "Female",
+        species: "Dragon",
+        bondedDragon: true,
+        bond: "Eragon"
+      },
+      {
+        name: "Galbatorix",
+        gender: "Male",
+        species: "Human",
+        dragonRider: true,
+        bond: "Shruikan"
+      },
+      {
+        name: "Thorn",
+        alias: "Red-Strike-Thorn",
+        gender: "Male",
+        species: "Dragon",
+        bondedDragon: true,
+        bond: "Murtagh"
+      },
     ]
   }
-}
+};
 
 // Creates a new Array of all characters that are human
 const humans = [];
 series.stormlight.characters.map(function(human) {
-  if (human.species === 'Human') {
+  if (human.species === "Human") {
     humans.push(human);
   }
-})
+});
 
 // Prints out all the pages to each book
-series.stormlight.books.forEach(function (book) {
+series.stormlight.books.forEach(function(book) {
   console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
-series.reaper.books.forEach(function (book) {
+});
+series.reaper.books.forEach(function(book) {
   console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
-series.inheritance.books.forEach(function (book) {
+});
+series.inheritance.books.forEach(function(book) {
   console.log(`The book ${book.title} has ${book.pages} pages.`);
-})
+});
 
 // This plucks a string out of an Array
-const char = series.stormlight.characters.find(character => character.name === 'Kaladin');
+const char = series.stormlight.characters.find(
+  character => character.name === "Kaladin"
+);
 // This is a Template String
-console.log(`${char.name} is a ${char.eyes} ${char.gender} ${char.race} ${char.species}. `);
+console.log(
+  `${char.name} is a ${char.eyes} ${char.gender} ${char.race} ${char.species}. `
+);
 
 // Prints out all "book" info into a Table Chart
 console.table(series.stormlight.books);
