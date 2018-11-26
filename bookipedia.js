@@ -39,7 +39,7 @@ const series = {
       },
       {
         name: "Shallan",
-        gender: "Demale",
+        gender: "Female",
         species: "Human",
         race: "Vaden",
         radiant: "Lightweaver",
@@ -266,12 +266,12 @@ const series = {
 };
 
 // Creates a new Array of all characters that are human
-const humans = [];
-series.stormlight.characters.map(function(human) {
-  if (human.species === "Human") {
-    humans.push(human);
-  }
-});
+// const humans = [];
+// series.stormlight.characters.map(function(human) {
+//   if (human.species === "Human") {
+//     humans.push(human);
+//   }
+// });
 
 // Prints out all the pages to each book
 series.stormlight.books.forEach(function(book) {
@@ -297,3 +297,54 @@ console.log(
 console.table(series.stormlight.books);
 console.table(series.reaper.books);
 console.table(series.inheritance.books);
+
+// List of arrays
+const riders = [];
+const humans = [];
+const dwarfs = [];
+const elfs = [];
+const dragons = [];
+
+// Maps all Dragon Riders to "riders"
+series.inheritance.characters.map(function(character){
+  if(character.dragonRider === true) {
+    riders.push(character)
+  }
+});
+console.table(riders);
+
+// Maps all humans to "humans"
+series.inheritance.characters.map(function(character){
+  if(character.species === "Human") {
+    humans.push(character)
+  }
+});
+console.table(humans);
+
+// Maps all Dwarfs to "dwarfs"
+series.inheritance.characters.map(function(character){
+  if(character.species === "Dwarf") {
+    dwarfs.push(character)
+  }
+});
+console.table(dwarfs);
+
+// Maps all Elfs to "elfs"
+series.inheritance.characters.map(function(character){
+  if(character.species === "Elf") {
+    elfs.push(character)
+  }
+});
+console.table(elfs);
+
+// Maps all Dragons to "dragons"
+series.inheritance.characters.map(function(character){
+  if(character.species === "Dragon") {
+    dragons.push(character)
+  }
+});
+console.table(dragons);
+
+// HTML Elements
+const cardTitle = document.querySelector(".card-title");
+cardTitle.innerHTML = series.reaper.characters[0].name;
